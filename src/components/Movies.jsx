@@ -3,13 +3,13 @@ import SingleMovie from './SingleMovie';
 
 
 
- function Movies({moviesArray, onAdd}) {
-     console.log(moviesArray);
+ function Movies({moviesArray, onAdd, type}) {
+     
     return (
         <div class="container">
             <div class="row">
             {moviesArray.map((mov) => (
-        <SingleMovie movie={mov} key={mov.id} onAdd = {onAdd}/>
+        <SingleMovie movie={mov} key={mov.id} onAdd = {onAdd} type = {type}/>
       ))}
            
             </div>
