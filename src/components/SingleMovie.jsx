@@ -22,7 +22,7 @@ function SingleMovie({movie, onAdd, type}) {
                   <div className="card-body">
                     <h5 className="card-title">{movie.title}</h5>
                     <p className="card-text">{movie.desc}</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                    <a href="#" className="btn btn-primary" onClick={() => onAdd(movie.id)}>Remove</a>
                   </div>
                 </div>
             </>
